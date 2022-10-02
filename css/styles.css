@@ -121,7 +121,7 @@ button {
     margin-left: auto;
     padding-left: 15px;
     padding-right: 15px;
-    /* outline: 1px solid tomato; */
+    outline: 1px solid tomato;
 }
 
 .page-header {
@@ -230,16 +230,10 @@ button {
     text-decoration: none;
 }
 
-.connection-list-icon-mail {
-    fill: #757575;
-}
-
-.connection-list-icon-phone {
-    fill: #757575;
-}
-
-.connection-list .connection-list-link:hover,
-.connection-list .connection-list-link:focus,
+.connection-list-link:hover,
+.connection-list-icon-mail:hover,
+.connection-list-link:focus,
+.connection-list-icon-mail:focus,
 .connect-list .address:hover,
 .connect-list .address:focus,
 .connect-list .link:hover,
@@ -254,15 +248,24 @@ button {
     fill: var(--accent-color);
 }
 
+.connection-list-icon-mail {
+    fill: #757575;
+}
+
+.connection-list-icon-phone {
+    fill: #757575;
+}
+
 /*========= hero ===========*/
 
 .hero-section {
     text-align: center;
     /* background-color: var(--footer-color); */
-    /* outline: 2px solid tomato; */
+    outline: 2px solid tomato;
 }
 
 .hero-background {
+    background-size: cover;
     background-color: #c4c4c4;
     background-image: linear-gradient(
             rgba(47, 48, 58, 0.4),
@@ -355,14 +358,14 @@ button {
     text-align: center;
 }
 
-/*====== benefits =======*/
+/*========== benefits ============*/
 
 .benefits-section {
     background-color: var(--header-color);
     padding-bottom: 47px;
 }
 
-.benefits-list-link {
+.benefits-list-icon {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -371,9 +374,6 @@ button {
     margin-bottom: 30px;
     border-radius: 4px;
     background-color: #f5f4fa;
-}
-
-.benefits-list-icon {
     fill: var(--title-text-color);
 }
 
@@ -527,6 +527,7 @@ button {
     flex-basis: calc((100% - 60px) / 3);
 
     background-color: var(--header-color);
+    cursor: pointer;
 }
 
 .works-list-element:hover,
@@ -544,7 +545,7 @@ button {
     border-top: none;
 }
 
-.works-list-element-title {
+.works-list-wrapper:hover .works-list-element-title {
     margin-bottom: 4px;
 
     color: var(--title-text-color);
